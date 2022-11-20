@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../Components/imgs/logo-Med-On192.png";
 import img from "../Components/imgs/logo-Med-On512.png";
+import { Link } from "react-router-dom";
 
 import "./Main.css";
 
@@ -87,7 +88,7 @@ function App() {
                             <a
                               className="css-reg"
                               data-baseweb="button"
-                              href="usuarioCadastro"
+                              href="/usuarioCadastro"
                               target="_self"
                               aria-label="Fazer Cadastre-se"
                             >
@@ -98,10 +99,11 @@ function App() {
                             <a
                               className="css-entrar"
                               data-baseweb="button"
-                              href="usuarioLogin"
+                              href="/cadastroPaciente"
                               target="_self"
                               aria-label="Entrar"
                             >
+                              <Link to="/cadastroPaciente"></Link>
                               Já tem uma conta?
                             </a>
                           </div>
