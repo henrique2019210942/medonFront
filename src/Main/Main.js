@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../Components/imgs/logo-Med-On192.png";
 import img from "../Components/imgs/logo-Med-On512.png";
-import { Link } from "react-router-dom";
 
 import "./Main.css";
 
@@ -21,7 +20,7 @@ function App() {
                   <li className="css-logo">
                     <a
                       className="logo"
-                      data-baseweb="link"
+                      data-baseweb="main"
                       href="/"
                       target="_self"
                       aria-label="Acesse a página inicial do Med-On"
@@ -74,11 +73,9 @@ function App() {
                         <div className="css-mFirtst">
                           <div className="css-firTxt">
                             <h1 className="css-txt">
-                              Marque uma consulta e seja entendido em casa.
+                              Marque uma consulta e seja atendido em casa.
                             </h1>
                           </div>
-                        </div>
-                        <div className="css-mPara">
                           <div className="css-stPara">
                             <p>Cadastre-se é marque sua consulta</p>
                           </div>
@@ -99,11 +96,10 @@ function App() {
                             <a
                               className="css-entrar"
                               data-baseweb="button"
-                              href="/cadastroPaciente"
+                              href="/usuarioLogin"
                               target="_self"
                               aria-label="Entrar"
                             >
-                              <Link to="/cadastroPaciente"></Link>
                               Já tem uma conta?
                             </a>
                           </div>
