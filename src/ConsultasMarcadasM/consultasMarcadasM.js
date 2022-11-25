@@ -71,7 +71,7 @@ function App() {
                             deletarConsulta(val.data);
                           }}
                         >
-                          <Link to="/consultasMarcadas/">Desmarcar</Link>
+                          <Link to="/consultasMarcadas">Desmarcar</Link>
                         </button>
                       </div>
                     </div>
