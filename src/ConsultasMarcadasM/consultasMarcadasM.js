@@ -7,8 +7,8 @@ import { useState, useEffect } from "react";
 function App() {
   const [listaDeConsultasM, setListaDeConsultasM] = useState([]);
 
-  useEffect(() => {
-    Axios.get("https://medonback.herokuapp.com/cadastrarConsulta").then(
+    useEffect(() => {
+    Axios.get("http://medonback.herokuapp.com/cadastrarConsulta").then(
       (response) => {
         setListaDeConsultasM(response.data);
       }
@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   const deletarConsulta = (data) => {
-    Axios.delete(`https://medonback.herokuapp.com/cadastrarConsulta${data}`);
+    Axios.delete(`http://medonback.herokuapp.com/cadastrarConsulta/${data}`);
   };
 
   return (
