@@ -12,7 +12,7 @@ function App() {
   const [listaDeConsultasM, setListaDeConsultasM] = useState([]);
 
    useEffect(() => {
-    Axios.get("http://medonback.herokuapp.com/cadastrarConsulta/").then(
+    Axios.get("https://medonback.herokuapp.com/cadastrarConsulta/").then(
       (response) => {
         setListaDeConsultasM(response.data);
       }
@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   const cadastrarConsulta = () => {
-    Axios.post("http://medonback.herokuapp.com/cadastrarConsulta/", {
+    Axios.post("https://medonback.herokuapp.com/cadastrarConsulta/", {
       tipo: tipo,
       endereco: endereco,
       data: data,
